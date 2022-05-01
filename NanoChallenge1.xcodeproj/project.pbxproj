@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D261547281A8D4E00653609 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D261545281A8D4E00653609 /* CollectionTableViewCell.swift */; };
+		1D261548281A8D4E00653609 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D261546281A8D4E00653609 /* CollectionTableViewCell.xib */; };
+		1D26154B281A8D7D00653609 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D261549281A8D7D00653609 /* MyCollectionViewCell.swift */; };
+		1D26154C281A8D7D00653609 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D26154A281A8D7D00653609 /* MyCollectionViewCell.xib */; };
 		1D2C9BFD281A6FBC00061B5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C9BFC281A6FBC00061B5B /* AppDelegate.swift */; };
 		1D2C9BFF281A6FBC00061B5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C9BFE281A6FBC00061B5B /* SceneDelegate.swift */; };
 		1D2C9C01281A6FBC00061B5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2C9C00281A6FBC00061B5B /* ViewController.swift */; };
 		1D2C9C04281A6FBC00061B5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D2C9C02281A6FBC00061B5B /* Main.storyboard */; };
 		1D2C9C06281A6FBD00061B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D2C9C05281A6FBD00061B5B /* Assets.xcassets */; };
 		1D2C9C09281A6FBD00061B5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D2C9C07281A6FBD00061B5B /* LaunchScreen.storyboard */; };
+		1D4C24D4281BE8EC0092873E /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C24D3281BE8EC0092873E /* AddPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D261545281A8D4E00653609 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		1D261546281A8D4E00653609 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
+		1D261549281A8D7D00653609 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D26154A281A8D7D00653609 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		1D2C9BF9281A6FBC00061B5B /* NanoChallenge1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NanoChallenge1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D2C9BFC281A6FBC00061B5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D2C9BFE281A6FBC00061B5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,7 @@
 		1D2C9C05281A6FBD00061B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D2C9C08281A6FBD00061B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D2C9C0A281A6FBD00061B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D4C24D3281BE8EC0092873E /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,36 @@
 		1D2C9BFB281A6FBC00061B5B /* NanoChallenge1 */ = {
 			isa = PBXGroup;
 			children = (
+				1D2C9C16281A8CB900061B5B /* Collection Cell */,
+				1D2C9C15281A8CAF00061B5B /* Table Cell */,
 				1D2C9BFC281A6FBC00061B5B /* AppDelegate.swift */,
 				1D2C9BFE281A6FBC00061B5B /* SceneDelegate.swift */,
 				1D2C9C00281A6FBC00061B5B /* ViewController.swift */,
 				1D2C9C02281A6FBC00061B5B /* Main.storyboard */,
+				1D4C24D3281BE8EC0092873E /* AddPhotoViewController.swift */,
 				1D2C9C05281A6FBD00061B5B /* Assets.xcassets */,
 				1D2C9C07281A6FBD00061B5B /* LaunchScreen.storyboard */,
 				1D2C9C0A281A6FBD00061B5B /* Info.plist */,
 			);
 			path = NanoChallenge1;
+			sourceTree = "<group>";
+		};
+		1D2C9C15281A8CAF00061B5B /* Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1D261545281A8D4E00653609 /* CollectionTableViewCell.swift */,
+				1D261546281A8D4E00653609 /* CollectionTableViewCell.xib */,
+			);
+			path = "Table Cell";
+			sourceTree = "<group>";
+		};
+		1D2C9C16281A8CB900061B5B /* Collection Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1D261549281A8D7D00653609 /* MyCollectionViewCell.swift */,
+				1D26154A281A8D7D00653609 /* MyCollectionViewCell.xib */,
+			);
+			path = "Collection Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +156,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D26154C281A8D7D00653609 /* MyCollectionViewCell.xib in Resources */,
 				1D2C9C09281A6FBD00061B5B /* LaunchScreen.storyboard in Resources */,
 				1D2C9C06281A6FBD00061B5B /* Assets.xcassets in Resources */,
 				1D2C9C04281A6FBC00061B5B /* Main.storyboard in Resources */,
+				1D261548281A8D4E00653609 /* CollectionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D2C9C01281A6FBC00061B5B /* ViewController.swift in Sources */,
+				1D4C24D4281BE8EC0092873E /* AddPhotoViewController.swift in Sources */,
+				1D26154B281A8D7D00653609 /* MyCollectionViewCell.swift in Sources */,
 				1D2C9BFD281A6FBC00061B5B /* AppDelegate.swift in Sources */,
 				1D2C9BFF281A6FBC00061B5B /* SceneDelegate.swift in Sources */,
+				1D261547281A8D4E00653609 /* CollectionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
