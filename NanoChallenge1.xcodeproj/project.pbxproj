@@ -18,6 +18,8 @@
 		1D2C9C06281A6FBD00061B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D2C9C05281A6FBD00061B5B /* Assets.xcassets */; };
 		1D2C9C09281A6FBD00061B5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D2C9C07281A6FBD00061B5B /* LaunchScreen.storyboard */; };
 		1D4C24D4281BE8EC0092873E /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C24D3281BE8EC0092873E /* AddPhotoViewController.swift */; };
+		1DC55A3928252BBC009CFE41 /* Clothe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC55A3828252BBC009CFE41 /* Clothe.swift */; };
+		1DC55A3B28252BEF009CFE41 /* ClotheFeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC55A3A28252BEF009CFE41 /* ClotheFeeder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		1D2C9C08281A6FBD00061B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1D2C9C0A281A6FBD00061B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D4C24D3281BE8EC0092873E /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
+		1DC55A3828252BBC009CFE41 /* Clothe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clothe.swift; sourceTree = "<group>"; };
+		1DC55A3A28252BEF009CFE41 /* ClotheFeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClotheFeeder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 				1D2C9BFC281A6FBC00061B5B /* AppDelegate.swift */,
 				1D2C9BFE281A6FBC00061B5B /* SceneDelegate.swift */,
 				1D2C9C00281A6FBC00061B5B /* ViewController.swift */,
+				1DC55A3828252BBC009CFE41 /* Clothe.swift */,
+				1DC55A3A28252BEF009CFE41 /* ClotheFeeder.swift */,
 				1D2C9C02281A6FBC00061B5B /* Main.storyboard */,
 				1D4C24D3281BE8EC0092873E /* AddPhotoViewController.swift */,
 				1D2C9C05281A6FBD00061B5B /* Assets.xcassets */,
@@ -176,7 +182,9 @@
 				1D26154B281A8D7D00653609 /* MyCollectionViewCell.swift in Sources */,
 				1D2C9BFD281A6FBC00061B5B /* AppDelegate.swift in Sources */,
 				1D2C9BFF281A6FBC00061B5B /* SceneDelegate.swift in Sources */,
+				1DC55A3928252BBC009CFE41 /* Clothe.swift in Sources */,
 				1D261547281A8D4E00653609 /* CollectionTableViewCell.swift in Sources */,
+				1DC55A3B28252BEF009CFE41 /* ClotheFeeder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

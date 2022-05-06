@@ -52,13 +52,39 @@
                     <view key="view" contentMode="scaleToFill" id="twt-fW-Ddl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPp-9q-mc6">
+                                <rect key="frame" x="15" y="15" width="74" height="32.5"/>
+                                <color key="tintColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Cancel">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressCancel:" destination="Ynr-eu-Gli" eventType="touchUpInside" id="4lH-u6-Af6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aL5-qd-JyP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GPp-9q-mc6" firstAttribute="leading" secondItem="aL5-qd-JyP" secondAttribute="leading" constant="15" id="CmK-jT-zr4"/>
+                            <constraint firstItem="GPp-9q-mc6" firstAttribute="top" secondItem="aL5-qd-JyP" secondAttribute="top" constant="15" id="iXb-mr-hw7"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="k1n-C6-Log"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ct8-yR-Y9U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1859" y="72"/>
+            <point key="canvasLocation" x="1857.9710144927537" y="71.651785714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W45-un-Yof">
