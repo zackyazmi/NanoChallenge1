@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IRS-ch-qyy">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -34,6 +34,7 @@
                     <navigationItem key="navigationItem" title="Your Closet" id="oxH-hg-9ls">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="gAI-IW-3Dm">
                             <imageReference key="image" image="plus.circle" catalog="system" symbolScale="large"/>
+                            <color key="tintColor" red="0.62352943419999995" green="0.52941179279999995" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -54,14 +55,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPp-9q-mc6">
-                                <rect key="frame" x="15" y="15" width="74" height="32.5"/>
+                                <rect key="frame" x="15" y="15" width="68" height="30.5"/>
                                 <color key="tintColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Cancel">
                                             <attributes>
-                                                <font key="NSFont" size="16" name="Helvetica"/>
+                                                <font key="NSFont" size="14" name="Helvetica"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -70,12 +71,74 @@
                                     <action selector="pressCancel:" destination="Ynr-eu-Gli" eventType="touchUpInside" id="4lH-u6-Af6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mG-rl-KWA">
+                                <rect key="frame" x="46" y="155" width="322" height="227"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="227" id="Puz-Tb-Iip"/>
+                                    <constraint firstAttribute="width" constant="322" id="m37-uh-FGX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="plus" catalog="system" symbolScale="large"/>
+                                    <backgroundConfiguration key="background" cornerRadius="15">
+                                        <color key="strokeColor" red="0.62352943419999995" green="0.52941179279999995" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addItem:" destination="Ynr-eu-Gli" eventType="touchUpInside" id="DYC-WX-weW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Your Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TK-yr-dij">
+                                <rect key="frame" x="126" y="95" width="163" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="n4c-Sw-lhd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" red="0.62352943419999995" green="0.52941179279999995" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m4e-r1-fGW">
+                                <rect key="frame" x="46" y="460" width="322" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="322" id="Cwl-70-U6S"/>
+                                    <constraint firstAttribute="height" constant="34" id="O2i-Lv-PyE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROM-to-gxz">
+                                <rect key="frame" x="46" y="693" width="322" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save Photo">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="baseBackgroundColor" red="0.62352943419999995" green="0.52941179279999995" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eii-bw-XzA">
+                                <rect key="frame" x="46" y="434" width="77.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <color key="textColor" red="0.62352943419999995" green="0.52941179279999995" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aL5-qd-JyP"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="GPp-9q-mc6" firstAttribute="leading" secondItem="aL5-qd-JyP" secondAttribute="leading" constant="15" id="CmK-jT-zr4"/>
+                            <constraint firstItem="6TK-yr-dij" firstAttribute="leading" secondItem="aL5-qd-JyP" secondAttribute="leading" constant="126" id="Jte-I3-dXL"/>
+                            <constraint firstItem="6TK-yr-dij" firstAttribute="top" secondItem="aL5-qd-JyP" secondAttribute="top" constant="95" id="N3z-0I-v0R"/>
+                            <constraint firstItem="3mG-rl-KWA" firstAttribute="leading" secondItem="aL5-qd-JyP" secondAttribute="leading" constant="46" id="Qoe-b8-BqX"/>
+                            <constraint firstItem="aL5-qd-JyP" firstAttribute="trailing" secondItem="6TK-yr-dij" secondAttribute="trailing" constant="125" id="V58-9H-ZXV"/>
+                            <constraint firstItem="aL5-qd-JyP" firstAttribute="trailing" secondItem="3mG-rl-KWA" secondAttribute="trailing" constant="46" id="VQF-b6-Sjf"/>
+                            <constraint firstItem="eii-bw-XzA" firstAttribute="top" secondItem="3mG-rl-KWA" secondAttribute="bottom" constant="52" id="WYp-fM-bLf"/>
+                            <constraint firstItem="3mG-rl-KWA" firstAttribute="top" secondItem="6TK-yr-dij" secondAttribute="bottom" constant="39" id="Y00-Yu-Re2"/>
+                            <constraint firstItem="m4e-r1-fGW" firstAttribute="leading" secondItem="aL5-qd-JyP" secondAttribute="leading" constant="46" id="hmN-ou-vYr"/>
                             <constraint firstItem="GPp-9q-mc6" firstAttribute="top" secondItem="aL5-qd-JyP" secondAttribute="top" constant="15" id="iXb-mr-hw7"/>
+                            <constraint firstItem="aL5-qd-JyP" firstAttribute="trailing" secondItem="m4e-r1-fGW" secondAttribute="trailing" constant="46" id="lpp-Fd-Uhd"/>
+                            <constraint firstItem="eii-bw-XzA" firstAttribute="leading" secondItem="aL5-qd-JyP" secondAttribute="leading" constant="46" id="oBI-kb-HGj"/>
+                            <constraint firstItem="m4e-r1-fGW" firstAttribute="top" secondItem="eii-bw-XzA" secondAttribute="bottom" constant="8" id="zUN-UW-010"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -91,9 +154,16 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wE7-YZ-mTD" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fFB-gW-xJ1">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="fFB-gW-xJ1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.62352943419999995" green="0.52941179279999995" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemBrownColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" systemColor="systemBrownColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -106,9 +176,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
