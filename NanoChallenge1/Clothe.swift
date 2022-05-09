@@ -8,8 +8,8 @@
 import Foundation
 
 struct Model {
-    let text: String
-    let imageName: String
+    var text: String
+    var imageName: String
     
     init(text: String, imageName: String) {
         self.text = text
@@ -18,7 +18,7 @@ struct Model {
 }
 
 struct Clothe {
-    let type: String
-    let content: [Model]
-    let title: String
+    var type: String
+    var content: [Model]
+    var title: String
 }

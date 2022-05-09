@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, addItemDelegate {
     
     @IBOutlet var table: UITableView!
     
@@ -26,6 +26,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         table.reloadData()
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus.circle"), style: .plain, target: self, action: #selector(addPhoto))
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "AddPhotoPage" {
+            guard let vc = segue.destination as? AddPhotoViewController else{
+                fatalError("Destination is misisng")
+            }
+            vc.delegate = self
+        }
     }
     
     // Table
@@ -50,4 +59,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return 250.0
     }
     
+    func getItem(_ category: Int, content: Model) {
+        print(content)
+        arrOfClothe?[category].content.append(content)
+        self.table.reloadData()
+    }
 }

@@ -39,7 +39,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="table" destination="IRS-ch-qyy" id="63B-wd-Ahz"/>
-                        <segue destination="Ynr-eu-Gli" kind="presentation" identifier="AddPhotoPage" modalPresentationStyle="fullScreen" id="JeE-jz-E6N"/>
+                        <segue destination="Ynr-eu-Gli" kind="presentation" identifier="AddPhotoPage" modalPresentationStyle="automatic" id="JeE-jz-E6N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -51,11 +51,11 @@
             <objects>
                 <viewController id="Ynr-eu-Gli" customClass="AddPhotoViewController" customModule="NanoChallenge1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="twt-fW-Ddl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GPp-9q-mc6">
-                                <rect key="frame" x="15" y="44" width="71" height="31.5"/>
+                                <rect key="frame" x="15" y="0.0" width="71" height="31.5"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Cancel">
@@ -66,7 +66,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mG-rl-KWA">
-                                <rect key="frame" x="46" y="183.5" width="322" height="227"/>
+                                <rect key="frame" x="46" y="139.5" width="322" height="227"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="227" id="Puz-Tb-Iip"/>
                                     <constraint firstAttribute="width" constant="322" id="m37-uh-FGX"/>
@@ -84,7 +84,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Your Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TK-yr-dij">
-                                <rect key="frame" x="126" y="124" width="163" height="20.5"/>
+                                <rect key="frame" x="126" y="80" width="163" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="163" id="n4c-Sw-lhd"/>
                                 </constraints>
@@ -93,38 +93,41 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m4e-r1-fGW">
-                                <rect key="frame" x="46" y="495.5" width="322" height="34"/>
+                                <rect key="frame" x="46" y="451.5" width="322" height="34"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROM-to-gxz">
-                                <rect key="frame" x="46" y="756" width="322" height="42"/>
+                                <rect key="frame" x="46" y="736" width="322" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="1N5-hh-LCc"/>
                                     <constraint firstAttribute="width" constant="322" id="P2z-lf-t06"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Save Photo">
+                                <buttonConfiguration key="configuration" style="filled" title="Save Item">
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                     <color key="baseBackgroundColor" red="0.62352943419999995" green="0.52941179279999995" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="saveItem:" destination="Ynr-eu-Gli" eventType="touchUpInside" id="G1n-tu-ogA"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eii-bw-XzA">
-                                <rect key="frame" x="46" y="462.5" width="322" height="18"/>
+                                <rect key="frame" x="46" y="418.5" width="322" height="18"/>
                                 <color key="tintColor" red="0.62352943419999995" green="0.52941179279999995" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <color key="textColor" red="0.62352943419999995" green="0.52941179279999995" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" red="0.62352943419999995" green="0.52941179279999995" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5G-GV-vGx">
-                                <rect key="frame" x="46" y="554.5" width="322" height="18"/>
+                                <rect key="frame" x="46" y="510.5" width="322" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <color key="textColor" red="0.62352943419999995" green="0.52941179279999995" blue="0.39607840779999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ey2-vF-bSe">
-                                <rect key="frame" x="42" y="587.5" width="24" height="38"/>
+                                <rect key="frame" x="42" y="543.5" width="24" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ble-mi-krb" customClass="CheckBox" customModule="NanoChallenge1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="24" height="14"/>
@@ -141,7 +144,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Hc3-3H-Tgg">
-                                <rect key="frame" x="76" y="594.5" width="45" height="61"/>
+                                <rect key="frame" x="76" y="550.5" width="45" height="61"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Layers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xC-cU-3bq">
                                         <rect key="frame" x="0.0" y="0.0" width="45" height="18"/>
@@ -158,7 +161,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eYT-Q7-Ysb">
-                                <rect key="frame" x="171" y="587.5" width="24" height="38"/>
+                                <rect key="frame" x="171" y="543.5" width="24" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5x-Cj-yMs" customClass="CheckBox" customModule="NanoChallenge1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="24" height="14"/>
@@ -175,7 +178,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Tv2-wu-AIJ">
-                                <rect key="frame" x="205" y="594.5" width="42.5" height="62"/>
+                                <rect key="frame" x="205" y="550.5" width="42.5" height="62"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shirts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CwO-Lb-nh9">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="18"/>
@@ -226,9 +229,9 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="k1n-C6-Log"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="itemName" destination="m4e-r1-fGW" id="cFl-9O-UIE"/>
                         <outlet property="layersCtg" destination="Ble-mi-krb" id="gUH-Z9-hkY"/>
                         <outlet property="pantsCtg" destination="Z3N-Wy-quQ" id="wtl-O3-shf"/>
                         <outlet property="shirtsCtg" destination="r5x-Cj-yMs" id="kt9-Ji-7p3"/>
@@ -237,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ct8-yR-Y9U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1857.9710144927537" y="71.651785714285708"/>
+            <point key="canvasLocation" x="1846" y="92"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W45-un-Yof">
