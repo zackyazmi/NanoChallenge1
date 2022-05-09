@@ -11,6 +11,12 @@ import UIKit
 
 class AddPhotoViewController: UIViewController, PHPickerViewControllerDelegate {
 
+
+    @IBOutlet weak var layersCtg: CheckBox!
+    @IBOutlet weak var shirtsCtg: CheckBox!
+    @IBOutlet weak var pantsCtg: CheckBox!
+    @IBOutlet weak var shoesCtg: CheckBox!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

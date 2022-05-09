@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class MyCollectionViewCell: UICollectionViewCell {
 
@@ -27,6 +28,8 @@ class MyCollectionViewCell: UICollectionViewCell {
         self.myLabel.text = model.text
         self.myImageView.image = UIImage(named: model.imageName)
         self.myImageView.contentMode = .scaleAspectFill
+        self.myImageView.layer.cornerRadius = 10
+        self.myImageView.clipsToBounds = true
     }
 
 }
